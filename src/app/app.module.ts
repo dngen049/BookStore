@@ -11,6 +11,9 @@ import { BooksComponent } from './books/books.component';
 import { BookComponent } from './books/book/book.component';
 import { AuthornamesPipe } from './pipes/authornames.pipe';
 import { AllBooksComponent } from './books/all-books/all-books.component';
+import { AdminComponent } from './admin/admin.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,18 @@ import { AllBooksComponent } from './books/all-books/all-books.component';
     BooksComponent,
     BookComponent,
     AuthornamesPipe,
-    AllBooksComponent
+    AllBooksComponent,
+    AdminComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

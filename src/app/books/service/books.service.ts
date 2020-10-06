@@ -58,4 +58,8 @@ export class BooksService {
   public getBooks(): Book[] {
     return this.books;
   }
+
+  public addBook(b: Book): void {
+    this.books.push(b);
+  }
 }
